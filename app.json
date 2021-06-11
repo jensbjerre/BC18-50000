@@ -1,0 +1,26 @@
+{
+  "id": "3f7582f5-4ec0-475a-954c-e7898bdd6e80",
+  "name": "Spy Integration (BC18)",
+  "publisher": "Spy ApS",
+  "version": "1.18.0.2",
+  "brief": "",
+  "description": "Platform 18, Runtime 7.0, Object id's from 50000 to 50099",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "http://www.spysystem.dk",
+  "logo": "Logo.jpg",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "18.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 50099
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://BC18-50000.com/help/",
+  "showMyCode": true,
+  "runtime": "7.0"
+}
