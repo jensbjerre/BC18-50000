@@ -6,6 +6,7 @@ codeunit 50009 SpyApplyCustomerTemplates
         CustomerRecRef: RecordRef;
         ConfigTemplateManagement: Codeunit "Config. Template Management";
         Cust: Record Customer;
+        DimensionsTemplate: Record "Dimensions Template";
         CT: Text;
         Country: Text;
     begin
@@ -14,14 +15,19 @@ codeunit 50009 SpyApplyCustomerTemplates
         Country := Cust."Country/Region Code";
         CT := CountryType;
 
-        IF ConfigTemplateHeader.GET('SPYCUS') THEN
+        IF ConfigTemplateHeader.GET('SPYCUS') THEN BEGIN
             ConfigTemplateManagement.UpdateRecord(ConfigTemplateHeader, CustomerRecRef);
+            DimensionsTemplate.InsertDimensionsFromTemplates(ConfigTemplateHeader, Cust."No.", DATABASE::Customer);
+        END;
+        IF ConfigTemplateHeader.GET('SPYCUS-' + CountryType) THEN BEGIN
+            ConfigTemplateManagement.UpdateRecord(ConfigTemplateHeader, CustomerRecRef);
+            DimensionsTemplate.InsertDimensionsFromTemplates(ConfigTemplateHeader, Cust."No.", DATABASE::Customer);
+        END;
 
-        IF ConfigTemplateHeader.GET('SPYCUS-' + CountryType) THEN
+        IF ConfigTemplateHeader.GET('SPYCUS-' + Country) THEN BEGIN
             ConfigTemplateManagement.UpdateRecord(ConfigTemplateHeader, CustomerRecRef);
-
-        IF ConfigTemplateHeader.GET('SPYCUS-' + Country) THEN
-            ConfigTemplateManagement.UpdateRecord(ConfigTemplateHeader, CustomerRecRef);
+            DimensionsTemplate.InsertDimensionsFromTemplates(ConfigTemplateHeader, Cust."No.", DATABASE::Customer);
+        END;
     end;
 
 }
