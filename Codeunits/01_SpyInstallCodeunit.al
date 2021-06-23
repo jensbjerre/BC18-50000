@@ -27,6 +27,7 @@ codeunit 50005 SpyInstallCodeUnit
         InsertWebservice('SpyDefaultDimension', 50091, 'page');
         InsertWebservice('SpyVatPostingSetup', 472, 'page');
         InsertWebservice('SpyFieldsPage', 50092, 'page');
+        InsertWebservice('SpyApplyCustomerTemplates', 50009, 'codeunit');
 
         // Slet eventuelle CVR format records
         if VatRegFormat.FindSet() then

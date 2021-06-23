@@ -17,8 +17,10 @@ permissionset 50080 SpyPermissionSet
         codeunit SpyCreateJournalLine = X,
         codeunit SpyInstallCodeUnit = X,
         codeunit SpyUpgradeCodeunit = X,
+        codeunit SpyApplyCustomerTemplates = X,
         xmlport SpyCustomerBalance = X,
         xmlport SpyXmlCreateJournalLine = X;
+
 
 
 }
