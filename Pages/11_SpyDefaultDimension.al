@@ -11,23 +11,23 @@ page 50091 SpyDefaultDimension
         {
             group(GroupName)
             {
-                field("Table ID"; rec."Table ID")
+                field("Table ID"; Rec."Table ID")
                 {
                     ApplicationArea = All;
                 }
-                field("No."; rec."No.")
+                field("No."; Rec."No.")
                 {
                     ApplicationArea = All;
                 }
-                field("Dimension Code"; rec."Dimension Code")
+                field("Dimension Code"; Rec."Dimension Code")
                 {
                     ApplicationArea = All;
                 }
-                field("Dimension Value Code"; rec."Dimension Value Code")
+                field("Dimension Value Code"; Rec."Dimension Value Code")
                 {
                     ApplicationArea = All;
                 }
-                field("Value Posting"; rec."Value Posting")
+                field("Value Posting"; Rec."Value Posting")
                 {
                     ApplicationArea = All;
                 }

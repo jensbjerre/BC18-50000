@@ -12,7 +12,7 @@ page 50083 SpyTempJournalLines
         {
             group(General)
             {
-                field("Journal Batch Name"; rec."Journal Batch Name")
+                field("Journal Batch Name"; Rec."Journal Batch Name")
                 {
                     ApplicationArea = All;
                     Caption = 'Journal Batch Name';

@@ -11,39 +11,39 @@ page 50086 SpyVendLedgerPage
         {
             group(GroupName)
             {
-                field("Posting Date"; rec."Posting Date")
+                field("Posting Date"; Rec."Posting Date")
                 {
                     ApplicationArea = All;
                 }
-                field("Document No."; rec."Document No.")
+                field("Document No."; Rec."Document No.")
                 {
                     ApplicationArea = All;
                 }
-                field("External Document No."; rec."External Document No.")
+                field("External Document No."; Rec."External Document No.")
                 {
                     ApplicationArea = All;
                 }
-                field("Vendor No."; rec."Vendor No.")
+                field("Vendor No."; Rec."Vendor No.")
                 {
                     ApplicationArea = All;
                 }
-                field("Document Type"; rec."Document Type")
+                field("Document Type"; Rec."Document Type")
                 {
                     ApplicationArea = All;
                 }
-                field(Amount; rec.Amount)
+                field(Amount; Rec.Amount)
                 {
                     ApplicationArea = All;
                 }
-                field("Currency Code"; rec."Currency Code")
+                field("Currency Code"; Rec."Currency Code")
                 {
                     ApplicationArea = All;
                 }
-                field("Amount (LCY)"; rec."Amount (LCY)")
+                field("Amount (LCY)"; Rec."Amount (LCY)")
                 {
                     ApplicationArea = All;
                 }
-                field(Description; rec.Description)
+                field(Description; Rec.Description)
                 {
                     ApplicationArea = All;
                 }

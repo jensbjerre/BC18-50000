@@ -11,43 +11,43 @@ page 50090 SpyTemplateLine
         {
             group(GroupName)
             {
-                field(Template; rec."Data Template Code")
+                field(Template; Rec."Data Template Code")
                 {
                     ApplicationArea = All;
                 }
-                field("Line No."; rec."Line No.")
+                field("Line No."; Rec."Line No.")
                 {
                     ApplicationArea = All;
                 }
-                field(Type; rec.Type)
+                field(Type; Rec.Type)
                 {
                     ApplicationArea = All;
                 }
-                field("Field ID"; rec."Field ID")
+                field("Field ID"; Rec."Field ID")
                 {
                     ApplicationArea = All;
                 }
-                field(FieldName; rec."Field Name")
+                field(FieldName; Rec."Field Name")
                 {
                     ApplicationArea = All;
                 }
-                field("Table ID"; rec."Table ID")
+                field("Table ID"; Rec."Table ID")
                 {
                     ApplicationArea = All;
                 }
-                field("Table Name"; rec."Table Name")
+                field("Table Name"; Rec."Table Name")
                 {
                     ApplicationArea = All;
                 }
-                field("Template Code"; rec."Template Code")
+                field("Template Code"; Rec."Template Code")
                 {
                     ApplicationArea = All;
                 }
-                field("Template Description"; rec."Template Description")
+                field("Template Description"; Rec."Template Description")
                 {
                     ApplicationArea = All;
                 }
-                field(DefaultValue; rec."Default Value")
+                field(DefaultValue; Rec."Default Value")
                 {
                     ApplicationArea = All;
                 }
