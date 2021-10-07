@@ -21,23 +21,23 @@ codeunit 50009 SpyApplyCustomerTemplates
         //     CustTemplateManagement.ApplyCustomerTemplate(Cust,CustTemplateHeader);
         // END;
         IF ConfigTemplateHeader.GET('SPYCUS') THEN BEGIN
-            Message('SPYCUS');
+
             ConfigTemplateManagement.UpdateRecord(ConfigTemplateHeader, CustomerRecRef);
             DimensionsTemplate.InsertDimensionsFromTemplates(ConfigTemplateHeader, Cust."No.", DATABASE::Customer);
-            Message(Cust."Gen. Bus. Posting Group");
+
         END;
         IF ConfigTemplateHeader.GET('SPYCUS-' + CountryType) THEN BEGIN
-            Message('SPYCUS-COUNTRYTYPE');
+
             ConfigTemplateManagement.UpdateRecord(ConfigTemplateHeader, CustomerRecRef);
             DimensionsTemplate.InsertDimensionsFromTemplates(ConfigTemplateHeader, Cust."No.", DATABASE::Customer);
-            Message(Cust."Gen. Bus. Posting Group");
+
         END;
 
         IF ConfigTemplateHeader.GET('SPYCUS-' + Country) THEN BEGIN
-            Message('SPYCUS-COUNTRY');
+
             ConfigTemplateManagement.UpdateRecord(ConfigTemplateHeader, CustomerRecRef);
             DimensionsTemplate.InsertDimensionsFromTemplates(ConfigTemplateHeader, Cust."No.", DATABASE::Customer);
-            Message(Cust."Gen. Bus. Posting Group");
+
         END;
         Cust.Modify();
     end;
