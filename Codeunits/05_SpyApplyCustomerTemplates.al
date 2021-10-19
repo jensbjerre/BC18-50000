@@ -26,14 +26,14 @@ codeunit 50009 SpyApplyCustomerTemplates
             DimensionsTemplate.InsertDimensionsFromTemplates(ConfigTemplateHeader, Cust."No.", DATABASE::Customer);
 
         END;
-        IF ConfigTemplateHeader.GET('SPYCUS-' + CountryType) THEN BEGIN
+        IF ConfigTemplateHeader.GET('SPYCUS-' + UpperCase(CountryType)) THEN BEGIN
 
             ConfigTemplateManagement.UpdateRecord(ConfigTemplateHeader, CustomerRecRef);
             DimensionsTemplate.InsertDimensionsFromTemplates(ConfigTemplateHeader, Cust."No.", DATABASE::Customer);
 
         END;
 
-        IF ConfigTemplateHeader.GET('SPYCUS-' + Country) THEN BEGIN
+        IF ConfigTemplateHeader.GET('SPYCUS-' + UpperCase(Country)) THEN BEGIN
 
             ConfigTemplateManagement.UpdateRecord(ConfigTemplateHeader, CustomerRecRef);
             DimensionsTemplate.InsertDimensionsFromTemplates(ConfigTemplateHeader, Cust."No.", DATABASE::Customer);
