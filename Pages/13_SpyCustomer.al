@@ -34,6 +34,7 @@ page 50093 SpyCustomerList
                 field("Address 2"; Rec."Address 2")
                 {
                     ApplicationArea = All;
+
                 }
                 field(City; Rec.City)
                 {

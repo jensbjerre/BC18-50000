@@ -28,6 +28,7 @@ codeunit 50007 SpyUpgradeCodeunit
         InsertWebservice('SpyVatPostingSetup', 472, 'page');
         InsertWebservice('SpyFieldsPage', 50092, 'page');
         InsertWebservice('SpyApplyCustomerTemplates', 50009, 'codeunit');
+        InsertWebservice('SpyInsertPostCode', 50010, 'codeunit');
 
 
         // Slet eventuelle CVR format records
