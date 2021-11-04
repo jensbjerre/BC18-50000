@@ -436,9 +436,9 @@ xmlport 50090 SpyXmlCreateJournalLine
                     genJournalLine.SetFilter("Journal Batch Name", batchName);
                     genJournalLine.SetFilter("Journal Template Name", templateName);
                     if genJournalLine.FindLast() then
-                        JournalLine."Line No." := genJournalLine."Line No." + 100
+                        JournalLine."Line No." := genJournalLine."Line No." + 102
                     else
-                        JournalLine."Line No." := 100;
+                        JournalLine."Line No." := 20000;
                 end;
 
                 trigger OnAfterInsertRecord()
