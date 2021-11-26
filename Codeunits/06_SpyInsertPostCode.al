@@ -8,7 +8,7 @@ codeunit 50010 SpyInsertPostCode
         IF (Country <> '') AND (City <> '') AND (PostCode <> '') THEN BEGIN
             //PostRec.SETFILTER(PostRec."Country/Region Code",Country);
             PostRec.SETFILTER(PostRec.City, '%1', City);
-            PostRec.SETFILTER(PostRec.Code, PostCode);
+            PostRec.SETFILTER(PostRec.Code, '%1', PostCode);
             IF NOT PostRec.FINDSET THEN BEGIN
                 PostRec.INIT;
                 PostRec.Code := PostCode;
