@@ -59,6 +59,19 @@ page 50084 SpyJournalPage
                 {
                     ApplicationArea = All;
                 }
+                field("Due Date"; Rec."Due Date")
+                {
+                    ApplicationArea = All;
+                }
+                field("Payment Terms Code"; Rec."Payment Terms Code")
+                {
+                    ApplicationArea = All;
+                }
+                field("Pmt. Discount Date"; Rec."Pmt. Discount Date")
+                {
+                    ApplicationArea = All;
+                }
+
 
             }
         }

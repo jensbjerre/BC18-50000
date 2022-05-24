@@ -1,10 +1,12 @@
 codeunit 50008 SpyCalcCustomerBalance
 {
+
     trigger OnRun()
     begin
 
     end;
 
+    [ServiceEnabled]
     procedure calcCustomerBalance()
     var
         cust: record Customer;
