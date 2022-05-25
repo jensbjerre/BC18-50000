@@ -71,6 +71,26 @@ page 50084 SpyJournalPage
                 {
                     ApplicationArea = All;
                 }
+                field("Gen. Bus. Posting Group"; Rec."Gen. Bus. Posting Group")
+                {
+                    ApplicationArea = All;
+                }
+                field("Gen. Prod. Posting Group"; Rec."Gen. Prod. Posting Group")
+                {
+                    ApplicationArea = All;
+                }
+                field("VAT Bus. Posting Group"; Rec."VAT Bus. Posting Group")
+                {
+                    ApplicationArea = All;
+                }
+                field("VAT Prod. Posting Group"; Rec."VAT Prod. Posting Group")
+                {
+                    ApplicationArea = All;
+                }
+                field("Gen. Posting Type"; Rec."Gen. Posting Type")
+                {
+                    ApplicationArea = All;
+                }
 
 
             }
